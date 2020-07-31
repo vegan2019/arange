@@ -16,7 +16,7 @@ var expectedOutput = []float64{0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6
 
 func TestArange(t *testing.T) {
 
-	uc := arange(0., 10., 0.5)
+	uc := Arange(0., 10., 0.5)
 	if !testEq(uc, expectedOutput, t) {
 		t.Errorf("output array not equal to the one expected")
 	}
